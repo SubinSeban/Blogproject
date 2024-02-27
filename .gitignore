@@ -1,0 +1,6 @@
+# gitignore file is use to ignore the files which cannot pust to the git;
+# the likable files would be added to this file;
+# part of security
+
+node_modules
+.env

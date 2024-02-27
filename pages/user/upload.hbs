@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link href="/admin.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="createBlog" action="/createblog" method="post" enctype="multipart/form-data">
+            <h1>Blog Content Upload</h1>
+
+            <label for="title">title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">content:</label>
+            <textarea id="content" rows="6" name="content" required></textarea>
+
+            
+
+            <label for="image">Image:</label>
+            <input type="file" id="imageInput" name="images" multiple accept="image/*" onchange="showImages()">
+            <div id="imagePreview">.</div>
+            <button type="submit" >upload</button>
+        </form>
+    </div>
+   <script src="/adminScript.js"></script>
+</body>
+</html>
